@@ -26,6 +26,14 @@
 			"groups": [
 				"DomainUsers"
 			]
+		},
+
+		{
+			"name": "Jill 1234",
+			"password": "Beanssss123",
+			"groups": [
+				"DomainUsers"
+			]
 		}
 
 	]

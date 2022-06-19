@@ -23,6 +23,7 @@ function CreateUser()
     catch [Microsoft.ActiveDirectory.Management.ADIDentityNotFoundException]{
         New-ADUser -Name "$name" -GivenName "$firstname" -SurName "$lastname" -SamAccountName "$samAccountName" -UserPrincipalName "$principalname@$Global:DomainName" -AccountPassword (ConvertTo-SecureString $password -AsPlainText -Force) -PassThru | Enable-ADAccount
         echo "User Added"
+        Get-ADUser -Identity $username
     }
         
 
