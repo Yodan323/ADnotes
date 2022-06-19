@@ -8,7 +8,8 @@ git clone https://github.com/Yodan323/ADnotes.git
 set-item wsman:\localhost\Client\Trustedhosts -value [IP ADDRESS]
 
 # Start Remote Session
-New-PSSession -ComputerName 192.168.160.128 -Credential(Get-Credential())
+New-PSSession -ComputerName 192.168.160.128 -Credential(Get-Credential)
+Enter-PSSession 1
 
 # Add new Computer to Git to ssh connections
 1. generate ssh key with ssh-keygen -t ed25519 -C "yodan323@gmail.com"

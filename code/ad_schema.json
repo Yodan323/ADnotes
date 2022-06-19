@@ -1,0 +1,32 @@
+{
+	"domain": "yodan.com",
+
+	"groups": [
+		{
+			"group_name": "DomainAdmins"
+		},		
+		{
+			"group_name": "DomainUsers"
+		}
+	],
+
+
+	"users": [
+		{
+			"name": "Yodan Cohen",
+			"password": "Yod069420",
+			"groups": [
+				"DomainAdmins","DomainUsers"
+			]
+		},
+
+		{
+			"name": "Mr Jeff",
+			"password": "Admatainov19",
+			"groups": [
+				"DomainUsers"
+			]
+		}
+
+	]
+}
